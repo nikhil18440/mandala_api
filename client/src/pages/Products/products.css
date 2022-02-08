@@ -1,0 +1,23 @@
+.productItems{
+    min-height: calc(100vh - 280px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 50px;
+}
+
+.productsComingsoonDiv{
+    background-color: rgb(230, 230, 230);
+    min-height: calc(100vh - 240px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsComingsoonDiv > h1{
+    color: rgb(92, 92, 92);
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 40px;
+}

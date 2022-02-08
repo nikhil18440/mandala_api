@@ -1,0 +1,213 @@
+.summaryFlexBox{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.summary{
+    flex: 1;
+    border: 1px solid grey;
+    padding: 25px 10px;
+    /* margin: 0px 0px 0px 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.summaryTitle{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtotal, .shippingFee, .grandTotal{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.shippingFee{
+    color: green;
+}
+
+.summarySubHeads{
+    display: flex;
+    align-items: flex-start;
+}
+
+.summaryline{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin: 10px;
+}
+
+.grandTotal{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.summaryAddressContainer{
+    border: 1px solid grey;
+    padding: 20px 10px;
+    margin-top: 0px;
+    /* margin: 0px 0px 0px 20px; */
+}
+
+.summaryBuyNowButton{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.summaryAddressContainerTitle{
+    color: rgb(177, 177, 177);
+    font-size: 19px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.summaryErrorText{
+    color: orangered;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.summaryErrorBtn{
+    font-size: 13px;
+    color: white;
+    background-color: rgb(0, 0, 37);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.summaryBlackBox{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.summaryModal{
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgb(0, 6, 63);
+    border-radius: 15px;
+    padding: 20px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 1px 2px 15px -2px hsl(0, 0%, 35%); 
+    box-shadow: 1px 2px 15px -2px #747474; 
+    padding: 15px 20px;
+}
+
+.summaryModalTop{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.summaryModalTopHeading{
+    font-family: 'Aclonica', sans-serif;
+    color: #1167b1;
+}
+
+.summaryModalTopClose{
+    position: absolute;
+    right: 0px;
+    background-color: rgba(255, 138, 138, 0.671);
+    color: red;
+    border-radius: 2px;
+    border: 1px solid red;
+    font-size: 15px !important;
+    cursor: pointer;
+}
+
+.summaryModalEmail{
+    color: rgb(46, 46, 46);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.summaryModalexpCVC{
+    display: flex;
+    width: 100%;
+}
+.summaryModalAmount{
+    color: #353535;
+    margin-top: 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.summaryModalPayBtn{
+    width: 100%;
+    color: white;
+    background-color: red;
+    border: 1px solid rgb(189, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 10px;
+    margin: 0px auto;
+}
+
+.summaryProgressBar{
+    color: white;
+    font-size: 17px !important;
+}
+
+.summaryGoToProfileBtn{
+    width: 100%;
+    color: white;
+    background-color: rgb(0, 0, 122);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 10px;
+    margin: 0px auto;
+    border: none;
+}
+
+.summaryGoToProfileDesc{
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 740px){
+    .summaryFlexBox{
+        margin: 0px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .summary{
+        margin: 0px;
+    }
+    .summaryAddressContainer{
+        margin: 0px;
+    }
+}

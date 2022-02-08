@@ -1,0 +1,127 @@
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0px;
+}
+
+.leftTitle{
+    font-family: 'Aclonica', sans-serif;
+    color: #1167b1;
+}
+
+.centerList{
+    display: flex;
+    list-style: none;
+}
+
+.centerListItem{
+    padding: 0px 10px;
+    color: #68849c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightTitle{
+    font-weight: 700;
+    font-size: 22px;
+    color: #2269a7;
+    margin-right: 10px;
+}
+
+
+
+.rightIcons{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart{
+    color: rgb(61, 61, 61);
+    font-size: 26px !important;
+}
+
+.avatar{
+    color: rgb(65, 65, 65);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+.navbarSignIn{
+    padding: 7px 10px;
+    background-color: #002a4e;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.NavbartoggleContainer{
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+        .navbar{
+            margin-bottom: 30px;
+        }
+       .center{
+           display: none;
+       }
+       .rightTitle{
+           display: none;
+       }
+       .cart{
+            font-size: 38px !important;
+       }
+       .NavbartoggleContainer{
+           display: block;
+           position: absolute;
+           top: 81px;
+           z-index: 999;
+           width: 100%;
+       }
+       .logoutBtn{
+           color: white;
+           background-color: #002a4e;
+           font-size: larger;
+           padding: 5px;
+           text-align: center;
+           font-weight: 700;
+           border-bottom: 1px solid #fff;
+           border-top: 1px solid #fff;
+       }
+       .homeNavitem{
+            background-color: rgb(223, 223, 223);
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .logoutBtnTopNavbar{
+            display: none;
+        }
+}
+
+@media only screen and (max-width: 300px){
+    .msgInput{
+        width: 250px;
+    }
+    .leftTitle{
+        font-size: 27px;
+    }
+    .cart{
+        font-size: 30px !important;
+    }
+}

@@ -1,0 +1,20 @@
+.cartItem{
+    background-color: white;
+}
+
+@media only screen and (max-width: 500px){
+    .cartPageContainer3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cartPageDetails{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cartPageDltBtnContainer{
+        margin-top: 10px;
+    }
+}

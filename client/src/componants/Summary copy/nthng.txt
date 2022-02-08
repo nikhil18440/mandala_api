@@ -1,0 +1,30 @@
+// if (payload.error) {
+        //     seterror(`Payment failed ${payload.error.message}`);
+        //     setprocessing(false);
+        //     setsuccess(false);
+        // } else {
+        //     console.log(payload.data)
+        //     seterror(null);
+        //     setprocessing(false);
+        //     setsuccess(true);
+        // }
+    //     if (elements == null) {
+    //         return;
+    //     }
+
+
+
+    // .then(async (res) => {
+    //         if(res.paymentMethod){
+    //             // console.log(res.paymentMethod)
+    //             try {
+    //                 const returnData = await axios.post("/checkout/payment", {
+    //                     tokenId: res.paymentMethod.id,
+    //                     amount: user.total
+    //                 })
+    //                 console.log(returnData)
+    //             } catch (error) {
+    //                 console.log(error)
+    //             }
+    //         }
+    //     })

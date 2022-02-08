@@ -1,0 +1,78 @@
+.message{
+    margin-bottom: 50px;
+}
+
+.messageTitle{
+    width: 100%;
+    text-align: center;
+    color: rgb(107, 106, 139);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Verdana, sans-serif ;
+}
+
+.messageForm{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.msgInput{
+    width: 350px;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(6, 6, 77);
+    position: relative;
+    z-index: 33;
+}
+
+.msgInput:focus{
+    outline: none;
+}
+
+.messageArea{
+    height: 200px;
+    padding-top: 10px;
+}
+
+.colorbox{
+    position: absolute;
+    width: 550px;
+    height: 400px;
+    background-color: rgb(6, 6, 34);
+    z-index: 2;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+
+.msgBtn{
+    color: white;
+    background-color: rgb(231, 0, 0);
+    border: 1px solid white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px){
+    .colorbox{
+        /* width: 100%;
+        height: 100%; */
+        display: none;
+    }   
+    .msgInput{
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .msgInput{
+        width: 250px;
+    }
+}

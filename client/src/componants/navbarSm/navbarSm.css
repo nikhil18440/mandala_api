@@ -1,0 +1,19 @@
+.navbarSm{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarSmcenterList{
+    display: flex;
+    list-style: none;
+}
+
+.navbarSmcenterListItem{
+    padding: 0px 10px;
+    color: #68849c;
+    font-weight: 600;
+    cursor: pointer;
+}

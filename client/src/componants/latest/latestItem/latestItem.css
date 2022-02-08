@@ -1,0 +1,88 @@
+.latestItem{
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.latestItem:hover{
+    animation-name: latestItemScale;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes latestItemScale {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
+
+.latestItemimgWrapper{
+    width: 100%;
+    height: 300px;
+}
+.latestItemImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.latestItemdetails{
+    /* background: linear-gradient( #d4b996ff, rgb(153, 126, 100)) */
+    background-color: rgb(6, 6, 34);
+    color: white;
+    padding: 5px 8px;
+}
+
+.latestItemtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+
+.latestItemtitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+.latestItembottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+
+.latestItemBuyNowBtn{
+    background-color: #d80505;
+    padding: 5px 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.latestItemprice{
+    font-size: 18px;
+}
+
+.latestItemHeart, .latestItemStar{
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+@media only screen and (max-width: 600px){
+    .latestItem{
+        margin: 10px 30px;
+    }
+}

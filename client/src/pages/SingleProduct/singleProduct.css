@@ -1,0 +1,135 @@
+.singleProduct{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.singleProductLeft{
+    margin-right: 40px;
+}
+
+.singleProductleftImg{
+    width: 300px;
+    height: 370px;
+    object-fit: contain;
+}
+
+.singleProductLeftBtns{
+    display: flex;
+    justify-content: center;
+}
+
+.radio1{
+    margin: 7px 3px;
+}
+
+
+.line{
+    height: 400px;
+    background-color: rgb(180, 180, 180);
+    width: 1px;
+}
+
+
+.singleProductRight{
+    margin-left: 40px;
+}
+
+.singleProductRightWrapper{
+    height: 280px;
+    position: relative;
+}
+
+.favouriteDiv{
+    position: absolute;
+    right: 0px;
+}
+
+.singleProductRightTitle{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(54, 54, 54);
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.singleProductRightSize{
+    font-size: 17px;
+    color: rgb(107, 107, 107);
+    margin-bottom: 3px;
+}
+
+.singleProductRightPrice{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(75, 75, 75);
+    margin-bottom: 14px;
+}
+
+.shippingdetails{
+    color: rgb(0, 185, 0);
+    font-weight: 600;
+}
+
+.replacementdetails{
+    color: rgb(204, 189, 176);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.quantity{
+    margin-bottom: 8px;
+}
+
+.quantityInput{
+    width: 35px;
+}
+
+.outofstockError{
+    color: red;
+    font-size: 15px;
+}
+
+.singleProductRightBtns{
+    display: flex;
+}
+.singleProductRightaddToCart{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: rgb(8, 8, 59);
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.singleProductRightBuyNow{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.singleProductRightBtnsIcons{
+    margin-left: 5px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .singleProduct{
+        flex-direction: column;
+    }
+    .line{
+        display: none;
+    }
+    .singleProductLeft, .singleProductRight{
+        margin: 0px;
+    }
+}
