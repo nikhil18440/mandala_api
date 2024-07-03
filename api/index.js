@@ -52,6 +52,9 @@ mongoose.connect(process.env.MONGO_URL, {
 })
 
 
+app.get('/', (req,res) =>{
+    res.send('hello world')
+})
 
 app.use("/api/auth", authRoute)
 app.use("/api/user", userRoute)
