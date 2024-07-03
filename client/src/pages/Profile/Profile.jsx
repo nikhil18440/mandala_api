@@ -105,7 +105,7 @@ export default function Profile() {
 
             //uploading image to mongodb
         try {
-            const res = await instance.put("/user/"+user.user._id , updatedUser)
+            const res = await instance.put("https://mandala-api.vercel.app/api/user/"+user.user._id , updatedUser)
             if(res.data){
                 dispatch(userFetchSuccess(res.data))
                 sessionStorage.setItem('user', JSON.stringify(res.data))

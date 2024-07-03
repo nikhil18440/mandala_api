@@ -14,7 +14,7 @@ export default function OrderItem({orderItem}) {
         const findOrderItem = async () => {
 
             try {
-                const res = await axios.get("/product/" + orderItem.productId)
+                const res = await axios.get("https://mandala-api.vercel.app/api/product/" + orderItem.productId)
                 if(res.data){
                     setorderSingleItem(res.data)
                 }

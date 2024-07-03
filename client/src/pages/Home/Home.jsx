@@ -26,7 +26,7 @@ export default function Home() {
     useEffect(() => {
        
         const viewProduct = async () => {
-            const res = await axios.get("/product?new=true")
+            const res = await axios.get("https://mandala-api.vercel.app/api/product?new=true")
             setlatestArray(res.data.filter(item => item.ordered === false ))
             console.log(res.data)
         }

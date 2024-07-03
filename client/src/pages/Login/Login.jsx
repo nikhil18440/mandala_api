@@ -30,7 +30,7 @@ export default function Login() {
         dispatch(userFetchStart())
         
         try {
-            const res = await axios.post("/auth/login", currUser)
+            const res = await axios.post("https://mandala-api.vercel.app/api/auth/login", currUser)
             if(res){
                 dispatch(userFetchSuccess(res.data))
                 sessionStorage.setItem('user', JSON.stringify(res.data))

@@ -22,7 +22,7 @@ export default function Register() {
 
         dispatch(userFetchStart())
         try {
-            const res = await axios.post("auth/register", {
+            const res = await axios.post("https://mandala-api.vercel.app/api/auth/register", {
                 username: username,
                 email: email,
                 password: password

@@ -30,7 +30,7 @@ export default function Product({product,latest}) {
 
         const cartId = JSON.parse(sessionStorage.getItem('cartId'))
         try {
-            const res = await instance.put("/cart/"+user.user._id, {
+            const res = await instance.put("https://mandala-api.vercel.app/api/cart/"+user.user._id, {
                 _id: cartId._id,
                 products: [...cart.cart.products,product],
                 quantity: cart.cart.products.length,

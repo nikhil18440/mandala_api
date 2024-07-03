@@ -35,7 +35,7 @@ export default function Summary({totalPrice}) {
     const fetchPaymentIntent = async () => {
         setisOpen(true)
         try{
-            const res = await axios.post("/checkout/payment", {
+            const res = await axios.post("https://mandala-api.vercel.app/api/checkout/payment", {
                 amount: JSON.stringify(cart.total * 100)
             })
             setclientSecret(res.data.clientSecret)
@@ -110,7 +110,7 @@ export default function Summary({totalPrice}) {
 
             if(userOrder){
                 const updatingCart = async (item) => {
-                    const order = await instance.put("/order/"+user.user._id, {
+                    const order = await instance.put("https://mandala-api.vercel.app/api/order/"+user.user._id, {
                         orderId: userOrder[0]._id || userOrder._id,
                         productId: item._id,          
                         })
@@ -118,13 +118,13 @@ export default function Summary({totalPrice}) {
 
                         if(order.data){
 
-                            const orderedData = await instance.put("/product/ordered/"+user.user._id, {
+                            const orderedData = await instance.put("https://mandala-api.vercel.app/api/product/ordered/"+user.user._id, {
                                 products: cart.cart.products
                             })
 
                             if(orderedData.data){
 
-                                const cartRemoval = await instance.put("/cart/"+user.user._id, {
+                                const cartRemoval = await instance.put("https://mandala-api.vercel.app/api/cart/"+user.user._id, {
                                     _id: cart.cart._id,
                                     products: [],
                                     quantity: 0,
@@ -133,7 +133,7 @@ export default function Summary({totalPrice}) {
 
                                 console.log(orderedData.data);
                                 if(cartRemoval.data){
-                                    window.location.replace("/order/"+user.user._id)
+                                    window.location.replace("https://mandala-api.vercel.app/api/order/"+user.user._id)
                                 }
                             }
                         }

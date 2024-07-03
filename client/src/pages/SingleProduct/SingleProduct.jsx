@@ -31,7 +31,7 @@ export default function SingleProduct() {
     useEffect(() => {
 
         const viewSingleProduct = async () => {
-            const res = await axios.get(`/product/${params.id}`)
+            const res = await axios.get(`https://mandala-api.vercel.app/api/product/${params.id}`)
             setsingleProductItem(res.data)
             setImg1(res.data.img[0])
             setImg2(res.data.img[1])

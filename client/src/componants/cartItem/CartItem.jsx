@@ -19,7 +19,7 @@ export default function CartItem({item}) {
         if(item){
             const findCartItem = async () => {
                 try {
-                    const res = await axios.get("/product/" + item._id)
+                    const res = await axios.get("https://mandala-api.vercel.app/api/product/" + item._id)
                     if(res.data.ordered === false){
                         setsingleCartItem(res.data)
                     }
@@ -38,7 +38,7 @@ export default function CartItem({item}) {
             const cartId = JSON.parse(sessionStorage.getItem('cartId'))
             const newCart = cart.cart.products.filter(i => i._id !== singleCartItem._id)
             console.log(newCart)
-            const res = await instance.put("/cart/"+user.user._id, {
+            const res = await instance.put("https://mandala-api.vercel.app/api/cart/"+user.user._id, {
                 _id: cartId._id,
                 products: newCart,
                 quantity: cart.cart.products.length,

@@ -19,10 +19,10 @@ export default function OrderPage() {
     const findOrders = async () => {
       try {
       
-        const res = await instance.get("/order/" + user.user._id)
+        const res = await instance.get("https://mandala-api.vercel.app/api/order/" + user.user._id)
 
         if(res.data === null || res.data.length === 0){
-          const order = await instance.post("/order/" + user.user._id, {
+          const order = await instance.post("https://mandala-api.vercel.app/api/order/" + user.user._id, {
             userId: user.user._id,
             products: [],
             amount: 0,
