@@ -22,13 +22,13 @@ export default function Register() {
 
         dispatch(userFetchStart())
         try {
-            const res = await axios.post("/auth/register", {
+            const res = await axios.post("auth/register", {
                 username: username,
                 email: email,
                 password: password
             })
             if(res.data){
-                window.location.replace("/login")  
+                window.location.replace("login")  
             }
         } catch (error) {
             dispatch(userFetchFailure())
