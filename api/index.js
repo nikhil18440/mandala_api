@@ -61,8 +61,8 @@ app.use("/api/order", orderRoute)
 // app.use("/api/checkout", stripeRoute)
 
 
+const port = process.env.PORT || 5000
 
-
-app.listen(process.env.PORT , () => {
+app.listen( port , () => {
     console.log("this is port 5000")
 })
